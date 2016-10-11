@@ -43,7 +43,7 @@ $disabled_secondary_inversed_fg_color: scale-alpha($secondary_inversed_fg_color,
 $disabled_tertiary_inversed_fg_color: scale-alpha($tertiary_inversed_fg_color, $disabled_opacity);
 
 // Background colors
-$bg_color: if($variant == 'light', #F5F5F5, #455A64);
+$bg_color: if($variant == 'light', #F3F3F3, #455A64);
 $base_color: if($variant == 'light', #FFFFFF, #546E7A);
 $alt_base_color: mix($base_color, $bg_color, 50%);
 $lighter_bg_color: if($variant =='light', #FAFAFA, #607D8B);
@@ -51,10 +51,12 @@ $darker_bg_color: if($variant =='light', #EEEEEE, #263238);
 $headerbar_color: if($variant =='light', #455A64, #37474F);
 $secondary_titlebar_color: #37474F;
 $topbar_color: #263238;
+$sidebar_bg_color: if($variant == 'light', white, #455A64);
+$selected_listitem_bg_color: rgba(0,0,0,0.05);
 
-$primary_color: #42A5F5;
+$primary_color: #2196F3;
 $alt_primary_color: #40C4FF;
-$accent_color: #FF4081;
+$accent_color: #448AFF;
 
 // Misc colors
 $track_color: gtkalpha(currentColor, $lower_opacity);
@@ -81,4 +83,3 @@ $info_bg_color: #66BB6A;
 $question_bg_color: #42A5F5;
 $warning_bg_color: #FFA726;
 $error_bg_color: #EF5350;
-

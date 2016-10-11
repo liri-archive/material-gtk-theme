@@ -770,19 +770,19 @@ spinbutton {
       border-radius: 0;
       box-shadow: none;
       background-color: transparent;
-      // 
+      //
       // This will help to simplify spinbutton's code, but unfortunatelly
       // doesn't work properly in :dir(rtl). It needs z-index property.
-      // 
+      //
       // min-width: $large_size - 8px;
-      // 
+      //
       // $spinbuttons_width: $small_size * 2 + $container_padding * 3;
-      // 
+      //
       // &:dir(ltr) {
       //   margin-right: -$spinbuttons_width;
       //   padding-right: $spinbuttons_width;
       // }
-      // 
+      //
       // &:dir(rtl) {
       //   margin-left: -$spinbuttons_width;
       //   padding-left: $spinbuttons_width;
@@ -2756,7 +2756,7 @@ filechooserbutton:drop(active) {
  ***********/
 .sidebar {
   border-style: none;
-  background-color: $lighter_bg_color;
+  background-color: $sidebar_bg_color;
 
   @at-root %sidebar_left,
   &:dir(ltr),
@@ -2819,7 +2819,7 @@ placessidebar {
     // will make the animation of the new bookmark row jump
     > revealer { padding: 0 12px; }
 
-    &:selected { color: $inversed_fg_color; }
+    &:selected { background: $selected_listitem_bg_color; color: $primary_color }
 
     &:disabled { color: $disabled_fg_color; }
 
@@ -3233,10 +3233,10 @@ button.titlebutton {
 // catch all extend :)
 
 %selected_items {
-  background-color: $primary_color;
+  background-color: $selected_listitem_bg_color;
 
   @at-root %nobg_selected_items, & {
-    color: $inversed_fg_color;
+    color: $primary_color;
 
     &:disabled { color: $disabled_inversed_fg_color; }
   }

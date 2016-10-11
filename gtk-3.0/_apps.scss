@@ -9,7 +9,13 @@
 .nautilus-window,
 .nautilus-window notebook,
 .nautilus-window notebook > stack {
-  background: $base_color;
+  background: $bg_color;
+}
+
+.nautilus-window {
+  .sidebar {
+    background: $sidebar_bg_color;
+  }
 }
 
 .nautilus-canvas-item {
@@ -1017,4 +1023,3 @@ UnityPanelWidget:backdrop,
   animation: playbackmenuitem_spinner 1s infinite linear;
   color: $primary_color;
 }
-
