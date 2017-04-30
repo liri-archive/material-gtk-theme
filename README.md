@@ -5,6 +5,7 @@ A Material Design-like theme for GNOME/GTK+ based desktop environments.
 Features
 --------
 <img src="img/Button.gif" alt="Button" align="right" />
+
 * Supports ripple effect animations (only GTK3 apps).
 * Supports both light and dark variants.
 * Supports [Dash to Dock](https://github.com/micheleg/dash-to-dock) extension's theming.
